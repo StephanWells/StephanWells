@@ -1,11 +1,16 @@
-import './App.css';
+import "./index.css";
+import NavBar from "./component/navbar";
+import { ThemeProvider } from "@mui/material";
+import theme from "./config/mui-theme";
 
 const App = () => {
   return (
-    <div className="App">
-      <h1>website</h1>
-    </div>
+    <ThemeProvider theme={theme}>
+      <div className="app">
+        <NavBar />
+      </div>
+    </ThemeProvider>
   );
-}
+};
 
 export default App;
