@@ -1,5 +1,5 @@
 import "./index.css";
-import NavBar from "./component/navbar";
+import Header from "./component/header";
 import { ThemeProvider } from "@mui/material";
 import theme from "./config/mui-theme";
 
@@ -7,7 +7,7 @@ const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <div className="app">
-        <NavBar />
+        <Header />
       </div>
     </ThemeProvider>
   );

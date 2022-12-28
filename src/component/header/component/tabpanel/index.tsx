@@ -24,6 +24,6 @@ const TabPanel = (props: TabPanelProps) => {
       )}
     </div>
   );
-}
+};
 
 export default TabPanel;

@@ -16,6 +16,15 @@ const theme = createTheme({
       contrastText: "#000",
     },
   },
+  components: {
+    MuiPopover: {
+      styleOverrides: {
+        paper: {
+          padding: "8px",
+        },
+      },
+    },
+  },
 });
 
 export default theme;

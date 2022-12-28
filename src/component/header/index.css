@@ -1,0 +1,13 @@
+.navbar {
+  background-color: #2c2e2e;
+  margin: auto;
+}
+
+.navbar-projectspopup {
+  padding-top: 50px;
+}
+
+.navbar-menuicon {
+  padding-right: 5px;
+  vertical-align: middle;
+}
