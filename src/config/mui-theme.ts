@@ -4,10 +4,7 @@ const theme = createTheme({
   palette: {
     mode: "dark",
     primary: {
-      light: "#757ce8",
       main: "#1df0ec",
-      dark: "#002884",
-      contrastText: "#fff",
     },
     secondary: {
       light: "#ff7961",
@@ -17,10 +14,11 @@ const theme = createTheme({
     },
   },
   components: {
-    MuiPopover: {
-      styleOverrides: {
-        paper: {
-          padding: "8px",
+    MuiPopper: {
+      defaultProps: {
+        style: {
+          color: "#e9eaf2",
+          padding: "5px",
         },
       },
     },
