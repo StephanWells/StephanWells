@@ -30,7 +30,11 @@ const Popup = (props: PopupProps) => {
         >
           <Box
             className="navbar-menu"
-            sx={{ boxShadow: "4px 6px 10px #121212", padding: "5px" }}
+            sx={{
+              boxShadow: "4px 6px 10px #121212",
+              padding: "5px",
+              backgroundColor: "#2c2e2e",
+            }}
             overflow="hidden"
           >
             <MenuItem

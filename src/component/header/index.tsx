@@ -1,4 +1,4 @@
-import { Box, Toolbar } from "@mui/material";
+import { Box, Toolbar, Typography } from "@mui/material";
 import { useState } from "react";
 import Popup from "./component/popup";
 import NavBar from "./component/navbar";
@@ -24,7 +24,14 @@ const Header = () => {
   return (
     <Box sx={{ width: "100%" }}>
       <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
-        <Toolbar>
+        <Toolbar className="toolbar">
+          <Typography
+            variant="h4"
+            fontFamily={"Encode Sans SC"}
+            className="toolbar-title"
+          >
+            Stephan Wells
+          </Typography>
           <NavBar
             currentState={state}
             setTabState={setState}
@@ -40,7 +47,10 @@ const Header = () => {
         setIndicatorColor={setIndicatorColor}
       />
       <TabPanel value={state.value} index={0}>
-        <>Overview goes here</>
+        <>
+          Overview goes here Overview goes here Overview goes here Overview goes
+          here
+        </>
       </TabPanel>
       <TabPanel value={state.value} index={1}>
         <>Projects goes here</>
