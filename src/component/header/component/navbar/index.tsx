@@ -1,4 +1,4 @@
-import { Tabs, Tab, SvgIcon } from "@mui/material";
+import { Tabs, Tab, SvgIcon, useTheme } from "@mui/material";
 import { ReactComponent as ContactIcon } from "../../../../assets/icon/contact.svg";
 import { ReactComponent as OverviewIcon } from "../../../../assets/icon/overview.svg";
 import { ReactComponent as ProjectIcon } from "../../../../assets/icon/project.svg";
@@ -7,9 +7,11 @@ import { tabState } from "../../definitions/tab-state";
 interface NavBarProps {
   currentState: tabState;
   setTabState: (value: tabState) => void;
+  indicatorColor: string;
+  setIndicatorColor: (value: string) => void;
 }
 
-const TabBar = (props: NavBarProps) => {
+const NavBar = (props: NavBarProps) => {
   const tabProps = (index: number) => {
     return {
       id: `tab-${index}`,
@@ -29,25 +31,34 @@ const TabBar = (props: NavBarProps) => {
     });
   };
 
+  const theme = useTheme();
+
   return (
     <Tabs
       className="navbar"
-      value={props.currentState.value}
+      value={Math.floor(props.currentState.value)}
       onChange={handleChange}
       aria-label="tabs"
+      textColor="inherit"
+      variant="scrollable"
+      scrollButtons="auto"
+      TabIndicatorProps={{
+        style: {
+          background: props.indicatorColor,
+        },
+      }}
     >
       <Tab
         label={"OVERVIEW"}
         icon={<SvgIcon component={OverviewIcon} fontSize={"inherit"} />}
         iconPosition="start"
+        onClick={() => props.setIndicatorColor(theme.palette.primary.main)}
         {...tabProps(0)}
       />
       <Tab
         label={"PROJECTS"}
         icon={<SvgIcon component={ProjectIcon} fontSize={"inherit"} />}
-        onAnimationStart={(event) => {
-          props.currentState.value === 1 && handleClick(event);
-        }}
+        onClick={(event) => handleClick(event)}
         iconPosition="start"
         {...tabProps(1)}
       />
@@ -55,10 +66,11 @@ const TabBar = (props: NavBarProps) => {
         label={"CONTACT"}
         icon={<SvgIcon component={ContactIcon} fontSize={"inherit"} />}
         iconPosition="start"
+        onClick={() => props.setIndicatorColor(theme.palette.primary.main)}
         {...tabProps(2)}
       />
     </Tabs>
   );
 };
 
-export default TabBar;
+export default NavBar;

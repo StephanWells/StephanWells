@@ -1,16 +1,16 @@
 import { createTheme } from "@mui/material/styles";
 
+declare module "@mui/material/styles/createTheme" {
+  interface ThemeOptions {
+    projectTypeColours?: Record<string, string>;
+  }
+}
+
 const theme = createTheme({
   palette: {
     mode: "dark",
     primary: {
       main: "#1df0ec",
-    },
-    secondary: {
-      light: "#ff7961",
-      main: "#f44336",
-      dark: "#ba000d",
-      contrastText: "#000",
     },
   },
   components: {
