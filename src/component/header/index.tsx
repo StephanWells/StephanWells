@@ -1,7 +1,7 @@
 import { Box, Toolbar, Typography } from "@mui/material";
 import { useState } from "react";
-import Popup from "./component/popup";
 import NavBar from "./component/navbar";
+import Popup from "./component/popup";
 import TabPanel from "./component/tabpanel";
 import { tabState } from "./definitions/tab-state";
 import "./index.css";
