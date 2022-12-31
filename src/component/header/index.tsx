@@ -1,8 +1,9 @@
-import { Box, Toolbar, Typography } from "@mui/material";
+import { Box, Toolbar } from "@mui/material";
 import { useState } from "react";
 import NavBar from "./component/navbar";
 import Popup from "./component/popup";
 import TabPanel from "./component/tabpanel";
+import Title from "./component/title";
 import { tabState } from "./definitions/tab-state";
 import "./index.css";
 
@@ -25,13 +26,7 @@ const Header = () => {
     <Box sx={{ width: "100%" }}>
       <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
         <Toolbar className="toolbar">
-          <Typography
-            variant="h4"
-            fontFamily={"Encode Sans SC"}
-            className="toolbar-title"
-          >
-            Stephan Wells
-          </Typography>
+          <Title tabState={state} />
           <NavBar
             currentState={state}
             setTabState={setState}
@@ -57,6 +52,12 @@ const Header = () => {
       </TabPanel>
       <TabPanel value={state.value} index={1.1}>
         <>Code goes here</>
+      </TabPanel>
+      <TabPanel value={state.value} index={1.2}>
+        <>Music goes here</>
+      </TabPanel>
+      <TabPanel value={state.value} index={1.3}>
+        <>Video goes here</>
       </TabPanel>
       <TabPanel value={state.value} index={2}>
         <>Contact goes here</>
