@@ -1,16 +1,11 @@
-import {
-  Box,
-  ClickAwayListener,
-  MenuItem,
-  Popper,
-  Slide,
-  SvgIcon,
-} from "@mui/material";
+import { Box, ClickAwayListener, Popper, Slide } from "@mui/material";
 import { useRef } from "react";
 import { ReactComponent as CodeIcon } from "../../../../assets/ui-icon/code.svg";
 import { ReactComponent as MusicIcon } from "../../../../assets/ui-icon/music.svg";
 import { ReactComponent as VideoIcon } from "../../../../assets/ui-icon/video.svg";
 import { projectTypeColours } from "../../../../constants/uiConstants";
+import ProjectTypeItem from "./component/project-type-item";
+import "./index.css";
 
 interface PopupProps {
   anchorEl: (EventTarget & Element) | null;
@@ -36,57 +31,37 @@ const Popup = (props: PopupProps) => {
             container={containerRef.current}
             direction="down"
           >
-            <Box
-              className="navbar-menu"
-              sx={{
-                boxShadow: "4px 6px 10px #121212",
-                padding: "5px",
-                backgroundColor: "#2c2e2e",
-              }}
-              overflow="hidden"
-            >
-              <MenuItem
-                onClick={() => {
-                  props.handleMenuClick(1.1);
-                  props.setIndicatorColor(projectTypeColours.code);
-                }}
-              >
-                <SvgIcon
-                  className="navbar-menuicon"
-                  component={CodeIcon}
-                  fontSize={"inherit"}
-                  sx={{ color: projectTypeColours.code }}
-                />
-                Coding
-              </MenuItem>
-              <MenuItem
-                onClick={() => {
-                  props.handleMenuClick(1.2);
-                  props.setIndicatorColor(projectTypeColours.music);
-                }}
-              >
-                <SvgIcon
-                  className="navbar-menuicon"
-                  component={MusicIcon}
-                  fontSize={"inherit"}
-                  sx={{ "padding-top": "3px", color: projectTypeColours.music }}
-                />
-                Music
-              </MenuItem>
-              <MenuItem
-                onClick={() => {
-                  props.handleMenuClick(1.3);
-                  props.setIndicatorColor(projectTypeColours.video);
-                }}
-              >
-                <SvgIcon
-                  className="navbar-menuicon"
-                  component={VideoIcon}
-                  fontSize={"inherit"}
-                  sx={{ "padding-top": "3px", color: projectTypeColours.video }}
-                />
-                Video
-              </MenuItem>
+            <Box className="navbar-menu" overflow="hidden">
+              <ProjectTypeItem
+                icon={CodeIcon}
+                index={1.1}
+                name={"Coding"}
+                description={"Games, simulations, and applications"}
+                color={projectTypeColours.code}
+                extraPadding="4px"
+                handleMenuClick={props.handleMenuClick}
+                setIndicatorColor={props.setIndicatorColor}
+              />
+              <ProjectTypeItem
+                icon={MusicIcon}
+                index={1.2}
+                name={"Music"}
+                description={"Music compositions (originals and covers)"}
+                color={projectTypeColours.music}
+                extraPadding="6px"
+                handleMenuClick={props.handleMenuClick}
+                setIndicatorColor={props.setIndicatorColor}
+              />
+              <ProjectTypeItem
+                icon={VideoIcon}
+                index={1.3}
+                name={"Video"}
+                description={"Videos produced and edited from scratch"}
+                color={projectTypeColours.video}
+                extraPadding="6px"
+                handleMenuClick={props.handleMenuClick}
+                setIndicatorColor={props.setIndicatorColor}
+              />
             </Box>
           </Slide>
         )}

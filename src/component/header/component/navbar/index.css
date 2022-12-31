@@ -1,0 +1,8 @@
+.navbar {
+  background-color: rgb(44, 46, 58, 0.2);
+  margin: auto;
+  position: absolute;
+  left: 50%;
+  top: -13%;
+  transform: translate(-50%, 0%);
+}

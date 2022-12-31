@@ -1,5 +1,6 @@
 import { Box, Toolbar } from "@mui/material";
 import { useState } from "react";
+import Overview from "../content/overview";
 import NavBar from "./component/navbar";
 import Popup from "./component/popup";
 import TabPanel from "./component/tabpanel";
@@ -42,10 +43,7 @@ const Header = () => {
         setIndicatorColor={setIndicatorColor}
       />
       <TabPanel value={state.value} index={0}>
-        <>
-          Overview goes here Overview goes here Overview goes here Overview goes
-          here
-        </>
+        <Overview />
       </TabPanel>
       <TabPanel value={state.value} index={1}>
         <>Projects goes here</>

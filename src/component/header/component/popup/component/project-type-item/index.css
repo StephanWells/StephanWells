@@ -1,0 +1,12 @@
+.navbar-menu-item {
+  margin: 8px !important;
+}
+
+.navbar-menu-icon {
+  padding-right: 8px;
+
+}
+
+.navbar-menu-name {
+  position: relative;
+}

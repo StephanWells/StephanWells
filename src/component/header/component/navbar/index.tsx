@@ -3,6 +3,7 @@ import { ReactComponent as ContactIcon } from "../../../../assets/ui-icon/contac
 import { ReactComponent as OverviewIcon } from "../../../../assets/ui-icon/overview.svg";
 import { ReactComponent as ProjectIcon } from "../../../../assets/ui-icon/project.svg";
 import { tabState } from "../../definitions/tab-state";
+import "./index.css";
 
 interface NavBarProps {
   currentState: tabState;
