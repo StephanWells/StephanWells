@@ -7,9 +7,9 @@ import {
   SvgIcon,
 } from "@mui/material";
 import { useRef } from "react";
-import { ReactComponent as CodeIcon } from "../../../../assets/icon/code.svg";
-import { ReactComponent as MusicIcon } from "../../../../assets/icon/music.svg";
-import { ReactComponent as VideoIcon } from "../../../../assets/icon/video.svg";
+import { ReactComponent as CodeIcon } from "../../../../assets/ui-icon/code.svg";
+import { ReactComponent as MusicIcon } from "../../../../assets/ui-icon/music.svg";
+import { ReactComponent as VideoIcon } from "../../../../assets/ui-icon/video.svg";
 import { projectTypeColours } from "../../../../constants/uiConstants";
 
 interface PopupProps {
