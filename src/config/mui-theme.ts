@@ -22,6 +22,15 @@ const theme = createTheme({
         },
       },
     },
+    MuiToolbar: {
+      styleOverrides: {
+        regular: {
+          "@media (max-width: 600px)": {
+            minHeight: "64px",
+          },
+        },
+      },
+    },
   },
 });
 
