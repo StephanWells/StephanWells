@@ -13,6 +13,19 @@ const theme = createTheme({
       main: "#1df0ec",
     },
   },
+  typography: {
+    h3: {
+      fontSize: "40px",
+      paddingBottom: "10px",
+      paddingLeft: "26px",
+      fontFamily: "Encode Sans SC",
+    },
+    h4: {
+      fontSize: "34px",
+      letterSpacing: "2.5px",
+      fontFamily: "Encode Sans SC",
+    },
+  },
   components: {
     MuiPopper: {
       defaultProps: {

@@ -11,13 +11,7 @@ const Title = (props: TitleProps) => {
   return (
     <>
       <div className="toolbar-title">
-        <Typography
-          variant="h4"
-          letterSpacing={"2.5px"}
-          fontFamily={"Encode Sans SC"}
-        >
-          Stephan Wells
-        </Typography>
+        <Typography variant="h4">Stephan Wells</Typography>
       </div>
       <div className="toolbar-subtitle">
         <Typography

@@ -43,7 +43,7 @@ const Header = () => {
         setIndicatorColor={setIndicatorColor}
       />
       <TabPanel value={state.value} index={0}>
-        <Overview />
+        <Overview tabState={state} />
       </TabPanel>
       <TabPanel value={state.value} index={1}>
         <>Projects goes here</>
