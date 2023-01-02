@@ -1,12 +1,4 @@
-import {
-  Box,
-  Container,
-  Divider,
-  Fade,
-  Grow,
-  Typography,
-  Zoom,
-} from "@mui/material";
+import { Box, Container, Divider, Fade, Grow, Typography } from "@mui/material";
 import { tabState } from "../../header/definitions/tab-state";
 import "./index.css";
 
@@ -21,13 +13,13 @@ const Overview = (props: OverviewProps) => {
       style={{ transformOrigin: "50% 0 0" }}
       timeout={600}
     >
-      <Container maxWidth={"md"} component="div" className="overview-container">
+      <Container maxWidth={"md"} className="overview-container">
         <Fade
           in={props.tabState.value === 0}
           style={{ transitionDelay: "300ms" }}
         >
           <Box>
-            <Box component="div" className="colour-chip-primary" />
+            <Box className="colour-chip-primary" />
             <Typography variant="h3" component="span">
               Hello there!
             </Typography>
