@@ -18,7 +18,7 @@ const Title = (props: TitleProps) => {
           variant={"body2"}
           fontFamily={"Encode Sans SC"}
           color={projectTypeColours.code}
-          style={{ opacity: props.tabState.value === 1.1 ? 1 : 0.5 }}
+          style={{ opacity: props.tabState.value === 2.1 ? 1 : 0.5 }}
         >
           DEVELOPER
         </Typography>
@@ -33,7 +33,7 @@ const Title = (props: TitleProps) => {
           variant={"body2"}
           fontFamily={"Encode Sans SC"}
           color={projectTypeColours.music}
-          style={{ opacity: props.tabState.value === 1.2 ? 1 : 0.5 }}
+          style={{ opacity: props.tabState.value === 2.2 ? 1 : 0.5 }}
         >
           MUSICIAN
         </Typography>
@@ -48,7 +48,7 @@ const Title = (props: TitleProps) => {
           variant={"body2"}
           fontFamily={"Encode Sans SC"}
           color={projectTypeColours.video}
-          style={{ opacity: props.tabState.value === 1.3 ? 1 : 0.5 }}
+          style={{ opacity: props.tabState.value === 2.3 ? 1 : 0.5 }}
         >
           VIDEO EDITOR
         </Typography>

@@ -46,15 +46,18 @@ const Header = () => {
         <Overview tabState={state} />
       </TabPanel>
       <TabPanel value={state.value} index={1}>
+        <>About goes here</>
+      </TabPanel>
+      <TabPanel value={state.value} index={2}>
         <>Projects goes here</>
       </TabPanel>
-      <TabPanel value={state.value} index={1.1}>
+      <TabPanel value={state.value} index={2.1}>
         <>Code goes here</>
       </TabPanel>
-      <TabPanel value={state.value} index={1.2}>
+      <TabPanel value={state.value} index={2.2}>
         <>Music goes here</>
       </TabPanel>
-      <TabPanel value={state.value} index={1.3}>
+      <TabPanel value={state.value} index={2.3}>
         <>Video goes here</>
       </TabPanel>
       <TabPanel value={state.value} index={2}>

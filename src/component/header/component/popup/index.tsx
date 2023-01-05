@@ -34,7 +34,7 @@ const Popup = (props: PopupProps) => {
             <Box className="navbar-menu" overflow="hidden">
               <ProjectTypeItem
                 icon={CodeIcon}
-                index={1.1}
+                index={2.1}
                 name={"Coding"}
                 description={"Games, simulations, and applications"}
                 color={projectTypeColours.code}
@@ -44,7 +44,7 @@ const Popup = (props: PopupProps) => {
               />
               <ProjectTypeItem
                 icon={MusicIcon}
-                index={1.2}
+                index={2.2}
                 name={"Music"}
                 description={"Music compositions (originals and covers)"}
                 color={projectTypeColours.music}
@@ -54,7 +54,7 @@ const Popup = (props: PopupProps) => {
               />
               <ProjectTypeItem
                 icon={VideoIcon}
-                index={1.3}
+                index={2.3}
                 name={"Video"}
                 description={"Videos produced and edited from scratch"}
                 color={projectTypeColours.video}

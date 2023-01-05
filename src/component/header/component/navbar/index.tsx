@@ -1,6 +1,7 @@
 import { Tabs, Tab, SvgIcon, useTheme } from "@mui/material";
 import { ReactComponent as ContactIcon } from "../../../../assets/ui-icon/contact.svg";
 import { ReactComponent as OverviewIcon } from "../../../../assets/ui-icon/overview.svg";
+import { ReactComponent as AboutIcon } from "../../../../assets/ui-icon/about.svg";
 import { ReactComponent as ProjectIcon } from "../../../../assets/ui-icon/project.svg";
 import { tabState } from "../../definitions/tab-state";
 import "./index.css";
@@ -57,18 +58,25 @@ const NavBar = (props: NavBarProps) => {
         {...tabProps(0)}
       />
       <Tab
+        label={"ABOUT"}
+        icon={<SvgIcon component={AboutIcon} fontSize={"inherit"} />}
+        iconPosition="start"
+        onClick={() => props.setIndicatorColor(theme.palette.primary.main)}
+        {...tabProps(1)}
+      />
+      <Tab
         label={"PROJECTS"}
         icon={<SvgIcon component={ProjectIcon} fontSize={"inherit"} />}
         onClick={(event) => handleClick(event)}
         iconPosition="start"
-        {...tabProps(1)}
+        {...tabProps(2)}
       />
       <Tab
         label={"CONTACT"}
         icon={<SvgIcon component={ContactIcon} fontSize={"inherit"} />}
         iconPosition="start"
         onClick={() => props.setIndicatorColor(theme.palette.primary.main)}
-        {...tabProps(2)}
+        {...tabProps(3)}
       />
     </Tabs>
   );
