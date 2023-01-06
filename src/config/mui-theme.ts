@@ -25,6 +25,14 @@ const theme = createTheme({
       letterSpacing: "2.5px",
       fontFamily: "Encode Sans SC",
     },
+    h5: {
+      fontSize: "20px",
+      fontFamily: "Encode Sans SC",
+    },
+    subtitle2: {
+      fontSize: "12px",
+      fontFamily: "Encode Sans SC",
+    },
   },
   components: {
     MuiPopper: {

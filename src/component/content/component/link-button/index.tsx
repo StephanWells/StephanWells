@@ -5,13 +5,15 @@ import {
   styled,
   Link,
   SvgIcon,
+  Typography,
 } from "@mui/material";
-import { ReactComponent as LinkIcon } from "../../../assets/ui-icon/link.svg";
+import { ReactComponent as LinkIcon } from "../../../../assets/ui-icon/link.svg";
 import "./index.css";
 
 interface LinkButtonProps {
   href: string;
   tooltip: string;
+  caption: string;
 }
 
 const LinkButton = (props: LinkButtonProps) => {
@@ -33,12 +35,12 @@ const LinkButton = (props: LinkButtonProps) => {
         display="inline"
         href={props.href}
         target={"_blank"}
+        underline="hover"
       >
-        <SvgIcon
-          className="link-icon"
-          component={LinkIcon}
-          // fontSize={"inherit"}
-        />
+        <SvgIcon className="link-icon" component={LinkIcon} />
+        <Typography className="link-caption" color={"primary"} display="inline">
+          <b>{props.caption}</b>
+        </Typography>
       </Link>
     </StyledTooltip>
   );

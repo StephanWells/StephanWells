@@ -9,11 +9,3 @@
   transform: scale(0.62);
   color: rgb(29, 240, 236, 0.5);
 }
-
-.link-icon:hover {
-  color: rgb(29, 240, 236, 0.8);
-}
-
-.link-icon:active {
-  color:rgb(29, 240, 236, 1)
-}

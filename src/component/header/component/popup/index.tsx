@@ -22,6 +22,7 @@ const Popup = (props: PopupProps) => {
       <Popper
         open={!!props.anchorEl}
         anchorEl={props.anchorEl}
+        placement="bottom-start"
         transition
         sx={{ overflow: "hidden" }}
       >

@@ -1,0 +1,28 @@
+.testimonial-card {
+  background-color: rgb(30, 32, 37, 0.8);
+  border-radius: 10px;
+  min-height: 194px;
+  width: 204px;
+  position: relative;
+}
+
+.testimonial-card .name {
+  color: #1df0ec;
+  margin-top: 5px;
+  text-align: end;
+}
+.testimonial-card .subtitle {
+  color:rgb(255, 255, 255, 0.8);
+  text-align: end;
+}
+
+.testimonial-card .quote {
+  color: rgb(255, 255, 255, 0.6);
+  margin-bottom: 10px;
+}
+
+.testimonial-card .name-container {
+  position: absolute;
+  bottom: 5%;
+  width: 83%;
+}

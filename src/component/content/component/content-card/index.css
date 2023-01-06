@@ -1,0 +1,27 @@
+.content-card {
+  background-color: rgb(44, 46, 58, 0.5);
+  border-radius: 10px;
+  margin-top: 15px;
+  padding-top: 15px;
+  padding-left: 30px;
+  padding-bottom: 20px;
+  padding-right: 30px;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.content-card .divider {
+  background-color: rgb(29, 240, 236, 0.2);
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.colour-chip-primary {
+  background-color: #1df0ec;
+  width: 7px;
+  height: 32px;
+  position: absolute;
+  margin-top: 8.5px;
+  border-bottom-left-radius: 2px;
+  border-top-left-radius: 2px;
+}
