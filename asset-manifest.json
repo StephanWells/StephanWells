@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.667f5b4b.css",
-    "main.js": "/portfolio/static/js/main.1356d768.js",
+    "main.css": "/portfolio/static/css/main.32559c45.css",
+    "main.js": "/portfolio/static/js/main.be2acd19.js",
     "static/media/denim.webp": "/portfolio/static/media/denim.bb77e49ff83871a78f30.webp",
     "static/media/introduction.svg": "/portfolio/static/media/introduction.20d536b09111a3baf92a87763d1ed6db.svg",
     "static/media/code.svg": "/portfolio/static/media/code.63637467883d014d87c6e1a32a771b04.svg",
@@ -14,11 +14,11 @@
     "static/media/about.svg": "/portfolio/static/media/about.5c2aff20b4c10f34ea166c70df6452fb.svg",
     "static/media/contact.svg": "/portfolio/static/media/contact.00ba98eb6e77065e4cc23dba20677554.svg",
     "static/media/overview.svg": "/portfolio/static/media/overview.a8ad190fec565853551daaca3c76ab41.svg",
-    "main.667f5b4b.css.map": "/portfolio/static/css/main.667f5b4b.css.map",
-    "main.1356d768.js.map": "/portfolio/static/js/main.1356d768.js.map"
+    "main.32559c45.css.map": "/portfolio/static/css/main.32559c45.css.map",
+    "main.be2acd19.js.map": "/portfolio/static/js/main.be2acd19.js.map"
   },
   "entrypoints": [
-    "static/css/main.667f5b4b.css",
-    "static/js/main.1356d768.js"
+    "static/css/main.32559c45.css",
+    "static/js/main.be2acd19.js"
   ]
 }
