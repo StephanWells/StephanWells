@@ -31,6 +31,7 @@ const updateView = (windowDimensions: { width: number }) => {
           alignItems="center"
           justifyContent="center"
           className="carousel-container"
+          key={i}
         >
           {items.slice(i, i + tempItems).map((item, index) => {
             return (
@@ -83,12 +84,38 @@ const Testimonials = () => {
         fullHeightHover={false}
         navButtonsProps={{
           style: {
-            backgroundColor: "rgb(29, 240, 236, 0.4)",
+            backgroundColor: "rgb(240, 240, 250, 0.3)",
+            width: "25px",
+            height: "100%",
+            borderRadius: "11px",
+            marginRight: "7px",
+          },
+        }}
+        navButtonsWrapperProps={{
+          style: {
+            height: "81.5%",
+            bottom: "47.8%",
+            top: "unset",
+          },
+        }}
+        indicatorIconButtonProps={{
+          className: "test",
+          style: {
+            color: "rgb(255, 255, 255, 0.6)",
+          },
+        }}
+        activeIndicatorIconButtonProps={{
+          className: "test",
+          style: {
+            backgroundColor: theme.palette.primary.main,
+            color: theme.palette.primary.main,
+            opacity: "0.45",
           },
         }}
         animation="slide"
         cycleNavigation
         duration={300}
+        className="carousel"
       >
         {sliderItems}
       </Carousel>

@@ -1,7 +1,7 @@
 [
   {
     "name": "My mum",
-    "subtitle": "Mother at Wells household",
+    "subtitle": "Mother",
     "quote": "I'm so proud of him!"
   },
   {
@@ -15,33 +15,33 @@
     "quote": "I am writing a long sentence right now to see if the testimonial will get larger and larger as the content gets longer and longer and I'm not sure if it will actually work"
   },
   {
-    "name": "Wephan Stells",
-    "subtitle": "This is a subtitle",
-    "quote": "Another card!"
-  },
-  {
-    "name": "Sephan Wtells",
-    "subtitle": "This is a subtitle",
-    "quote": "Aaaaaaand another card!"
+    "name": "Mr. T",
+    "subtitle": "Nunya Business, foo'",
+    "quote": "He knows his stuff."
   },
   {
     "name": "Wephan Stells",
+    "subtitle": "Suspiciously similar name to me",
+    "quote": "What an amazing musician!!"
+  },
+  {
+    "name": "Simon Cowell",
+    "subtitle": "Television personality",
+    "quote": "It's a no from me."
+  },
+  {
+    "name": "Running Outta Ideas",
     "subtitle": "This is a subtitle",
-    "quote": "Another card!"
+    "quote": "Here's another card!"
+  },
+  {
+    "name": "Albert Einstein",
+    "subtitle": "Genius",
+    "quote": "$100% the best video editing you'll ever get."
   },
   {
     "name": "Sephan Wtells",
-    "subtitle": "This is a subtitle",
-    "quote": "Aaaaaaand another card!"
-  },
-  {
-    "name": "Wephan Stells",
-    "subtitle": "This is a subtitle",
-    "quote": "Another card!"
-  },
-  {
-    "name": "Sephan Wtells",
-    "subtitle": "This is a subtitle",
+    "subtitle": "This is another subtitle",
     "quote": "Aaaaaaand another card!"
   }
 ]

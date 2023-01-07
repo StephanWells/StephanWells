@@ -13,7 +13,7 @@ const ContentCard = (props: ContentCardProps) => {
   return (
     <Box className="content-card">
       <Fade in={true} style={{ transitionDelay: `${props.animationDelay}ms` }}>
-        <Box>
+        <Box className="content-wrapper">
           <CircleIcon icon={props.icon} />
           <Box className="colour-chip-primary" />
           <Typography variant="h3" component="span">

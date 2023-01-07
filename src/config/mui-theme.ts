@@ -6,7 +6,8 @@ declare module "@mui/material/styles/createTheme" {
   }
 }
 
-const theme = createTheme({
+let theme = createTheme({});
+theme = createTheme(theme, {
   palette: {
     mode: "dark",
     primary: {
@@ -15,7 +16,7 @@ const theme = createTheme({
   },
   typography: {
     h3: {
-      fontSize: "40px",
+      fontSize: "calc(25px + 1.2vw)",
       paddingBottom: "10px",
       paddingLeft: "26px",
       fontFamily: "Encode Sans SC",
@@ -48,6 +49,15 @@ const theme = createTheme({
         regular: {
           "@media (max-width: 600px)": {
             minHeight: "64px",
+          },
+        },
+      },
+    },
+    MuiContainer: {
+      styleOverrides: {
+        maxWidthMd: {
+          [theme.breakpoints.up("md")]: {
+            maxWidth: "950px",
           },
         },
       },

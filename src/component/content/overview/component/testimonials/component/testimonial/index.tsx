@@ -9,16 +9,15 @@ interface TestimonialProps {
 
 const Testimonial = (props: TestimonialProps) => {
   return (
-    <Box
-      className="testimonial-card"
-      sx={{ margin: "10px", padding: "10px 20px" }}
-    >
+    <Box className="testimonial-card">
       <Box>
-        <Typography variant="body2" className="quote">
+        <Typography component="span" variant="body2" className="quote">
+          <span className="quotation-mark">❝</span>
           <i>{props.quote}</i>
+          <span className="quotation-mark">❞</span>
         </Typography>
         <Box className="name-container">
-          <Divider />
+          <Divider className="divider" />
           <Typography variant="h5" className="name">
             {props.name}
           </Typography>

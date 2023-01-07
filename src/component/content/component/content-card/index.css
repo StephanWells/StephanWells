@@ -10,6 +10,10 @@
   position: relative;
 }
 
+.content-wrapper {
+  margin: 0 -5px;
+}
+
 .content-card .divider {
   background-color: rgb(29, 240, 236, 0.2);
   margin-top: 5px;
@@ -19,9 +23,11 @@
 .colour-chip-primary {
   background-color: #1df0ec;
   width: 7px;
-  height: 32px;
+  height: 2.4vw;
+  min-height: 30px;
   position: absolute;
-  margin-top: 8.5px;
+  margin-top: 1%;
+  margin-left: 0.5%;
   border-bottom-left-radius: 2px;
   border-top-left-radius: 2px;
 }
