@@ -1,6 +1,6 @@
 import { Typography } from "@mui/material";
-import { projectTypeColours } from "../../../../constants/uiConstants";
-import { tabState } from "../../definitions/tab-state";
+import { projectTypeColours } from "../../../constants/uiConstants";
+import { tabState } from "../../../definitions/tab-state";
 import "./index.css";
 
 interface TitleProps {

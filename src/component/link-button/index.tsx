@@ -7,7 +7,7 @@ import {
   SvgIcon,
   Typography,
 } from "@mui/material";
-import { ReactComponent as LinkIcon } from "../../../../assets/ui-icon/link.svg";
+import { ReactComponent as LinkIcon } from "../../assets/ui-icon/link.svg";
 import "./index.css";
 
 interface LinkButtonProps {

@@ -1,5 +1,5 @@
 import { Box, Divider, Fade, Typography } from "@mui/material";
-import CircleIcon from "../circle-icon";
+import CircleIcon from "./circle-icon";
 import "./index.css";
 
 interface ContentCardProps {

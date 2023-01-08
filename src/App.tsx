@@ -1,5 +1,5 @@
 import "./index.css";
-import Header from "./component/header";
+import Header from "./sections/header";
 import { ThemeProvider } from "@mui/material";
 import theme from "./config/mui-theme";
 

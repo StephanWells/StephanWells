@@ -1,9 +1,9 @@
 import { Box, Grid, useTheme } from "@mui/material";
 import { useEffect, useState } from "react";
 import Carousel from "react-material-ui-carousel";
-import Testimonial from "./component/testimonial";
+import Testimonial from "./testimonial";
 import "./index.css";
-import items from "./testimonials.json";
+import items from "../../../assets/content/testimonials.json";
 
 const getWindowDimensions = () => {
   const { innerWidth: width, innerHeight: height } = window;
@@ -93,19 +93,17 @@ const Testimonials = () => {
         }}
         navButtonsWrapperProps={{
           style: {
-            height: "81.5%",
-            bottom: "47.8%",
+            height: "87.3%",
+            bottom: "48.6%",
             top: "unset",
           },
         }}
         indicatorIconButtonProps={{
-          className: "test",
           style: {
             color: "rgb(255, 255, 255, 0.6)",
           },
         }}
         activeIndicatorIconButtonProps={{
-          className: "test",
           style: {
             backgroundColor: theme.palette.primary.main,
             color: theme.palette.primary.main,

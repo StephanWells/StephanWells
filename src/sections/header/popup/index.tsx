@@ -1,10 +1,10 @@
 import { Box, ClickAwayListener, Popper, Slide } from "@mui/material";
 import { useRef } from "react";
-import { ReactComponent as CodeIcon } from "../../../../assets/ui-icon/code.svg";
-import { ReactComponent as MusicIcon } from "../../../../assets/ui-icon/music.svg";
-import { ReactComponent as VideoIcon } from "../../../../assets/ui-icon/video.svg";
-import { projectTypeColours } from "../../../../constants/uiConstants";
-import ProjectTypeItem from "./component/project-type-item";
+import { ReactComponent as CodeIcon } from "../../../assets/ui-icon/code.svg";
+import { ReactComponent as MusicIcon } from "../../../assets/ui-icon/music.svg";
+import { ReactComponent as VideoIcon } from "../../../assets/ui-icon/video.svg";
+import { projectTypeColours } from "../../../constants/uiConstants";
+import ProjectTypeItem from "./project-type-item";
 import "./index.css";
 
 interface PopupProps {

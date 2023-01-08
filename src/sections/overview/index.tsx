@@ -1,11 +1,11 @@
-import { Box, Container, Fade, Grow } from "@mui/material";
-import { tabState } from "../../header/definitions/tab-state";
-import ContentCard from "../component/content-card";
-import Introduction from "./component/introduction";
-import { ReactComponent as IntroductionIcon } from "../../../assets/circle-icon/introduction.svg";
-import { ReactComponent as TestimonialsIcon } from "../../../assets/circle-icon/testimonials.svg";
+import { Box, Container, Grow } from "@mui/material";
+import { ReactComponent as IntroductionIcon } from "../../assets/circle-icon/introduction.svg";
+import { ReactComponent as TestimonialsIcon } from "../../assets/circle-icon/testimonials.svg";
+import ContentCard from "../../component/content-card";
+import { tabState } from "../../definitions/tab-state";
 import "./index.css";
-import Testimonials from "./component/testimonials";
+import Introduction from "./introduction";
+import Testimonials from "./testimonials";
 
 interface OverviewProps {
   tabState: tabState;

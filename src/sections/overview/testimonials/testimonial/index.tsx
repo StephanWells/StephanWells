@@ -8,10 +8,18 @@ interface TestimonialProps {
 }
 
 const Testimonial = (props: TestimonialProps) => {
+  const size =
+    props.quote.length > 250 ? 14 : props.quote.length > 70 ? 16 : 20;
+
   return (
     <Box className="testimonial-card">
       <Box>
-        <Typography component="span" variant="body2" className="quote">
+        <Typography
+          component="span"
+          variant="body2"
+          fontSize={size}
+          className="quote"
+        >
           <span className="quotation-mark">❝</span>
           <i>{props.quote}</i>
           <span className="quotation-mark">❞</span>

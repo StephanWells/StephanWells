@@ -1,9 +1,9 @@
 import { Tabs, Tab, SvgIcon, useTheme } from "@mui/material";
-import { ReactComponent as ContactIcon } from "../../../../assets/ui-icon/contact.svg";
-import { ReactComponent as OverviewIcon } from "../../../../assets/ui-icon/overview.svg";
-import { ReactComponent as AboutIcon } from "../../../../assets/ui-icon/about.svg";
-import { ReactComponent as ProjectIcon } from "../../../../assets/ui-icon/project.svg";
-import { tabState } from "../../definitions/tab-state";
+import { ReactComponent as ContactIcon } from "../../../assets/ui-icon/contact.svg";
+import { ReactComponent as OverviewIcon } from "../../../assets/ui-icon/overview.svg";
+import { ReactComponent as AboutIcon } from "../../../assets/ui-icon/about.svg";
+import { ReactComponent as ProjectIcon } from "../../../assets/ui-icon/project.svg";
+import { tabState } from "../../../definitions/tab-state";
 import "./index.css";
 
 interface NavBarProps {

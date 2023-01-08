@@ -1,5 +1,5 @@
 import { Typography } from "@mui/material";
-import { experienceYears } from "../../../../../constants/uiConstants";
+import { experienceYears } from "../../../constants/uiConstants";
 import LinkButton from "../../../component/link-button";
 import "./index.css";
 

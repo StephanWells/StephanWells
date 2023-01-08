@@ -1,11 +1,11 @@
 import { Box, Toolbar } from "@mui/material";
 import { useState } from "react";
-import Overview from "../content/overview";
-import NavBar from "./component/navbar";
-import Popup from "./component/popup";
-import TabPanel from "./component/tabpanel";
-import Title from "./component/title";
-import { tabState } from "./definitions/tab-state";
+import Overview from "../overview";
+import NavBar from "./navbar";
+import Popup from "./popup";
+import TabPanel from "./tabpanel";
+import Title from "./title";
+import { tabState } from "../../definitions/tab-state";
 import "./index.css";
 
 const Header = () => {
