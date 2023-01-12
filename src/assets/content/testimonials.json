@@ -2,46 +2,55 @@
   {
     "name": "My mum",
     "subtitle": "Mother",
+    "type": "code",
     "quote": "I'm so proud of him!"
   },
   {
     "name": "Abraham Lincoln",
     "subtitle": "President at America",
+    "type": "video",
     "quote": "He's got skills"
   },
   {
-    "name": "Stephan Wells",
-    "subtitle": "Developer at EPAM",
-    "quote": "I am writing a long sentence right now to see if the testimonial will get larger and larger as the content gets longer and longer and I'm not sure if it will actually work"
+    "name": "vezanmatics",
+    "subtitle": "Animator",
+    "type": "music",
+    "quote": "Stephan was a real privilege to work with, I had always enjoyed his tracks - I reached out to collaborate on an old portfolio animation of mine called March of Progress, which called for a custom soundtrack with an evolving feel. I eagerly awaited the semi-weekly updates as he worked, he quickly made revisions on request, and the final product surpassed my original expectations. I still listen to it years later!"
   },
   {
-    "name": "Mr. T",
-    "subtitle": "Nunya Business, foo'",
-    "quote": "He knows his stuff."
+    "name": "Darren Kerwin",
+    "subtitle": "Creative Director at Shinesparkers",
+    "type": "video",
+    "quote": "In 2022 we collaborated on a cover of \"Celestial\" where I provided vocals for his arrangement. Stephan created an animated video to complement the music where he worked with existing art assets to create a beautiful piece of work. This elevated our project even higher and allowed us to reach a wider audience as a result."
   },
   {
-    "name": "Wephan Stells",
-    "subtitle": "Suspiciously similar name to me",
-    "quote": "What an amazing musician!!"
+    "name": "Guy Unger",
+    "subtitle": "Developer at knutsel",
+    "type": "music",
+    "quote": "I was blown away by Step's musical talent when he composed the soundtrack for my game. His cooperation, friendliness and professionalism made working with him a pleasure and the result was a beautiful score that really captures the mood and feel of the game."
   },
   {
-    "name": "Simon Cowell",
-    "subtitle": "Television personality",
-    "quote": "It's a no from me."
-  },
-  {
-    "name": "Running Outta Ideas",
-    "subtitle": "This is a subtitle",
-    "quote": "Here's another card!"
+    "name": "Bryly Maeder",
+    "subtitle": "Game Developer of Lightshift",
+    "type": "music",
+    "quote": "I cannot express enough just how amazing this creator is! Stephan has produced many wonderful creations over the years, and as a long time fan of his music, I commissioned some of his work for my game. His music was stunning and so much more than I bargained for. Not only is he easy to work with but such a friendly guy who gets things done in a reasonable time."
   },
   {
     "name": "Pierre Bonis",
     "subtitle": "Senior Games Programmer at Meta",
-    "quote": "Working with Stephan was always such a great pleasure. His minute attention to detail and love of clean, well-documented code made for one of the smoothest collaborative experiences I've had in a community project. He's organ-ised, focused but knows how to improvise and compromise. Oh, and he's also friendly, knowledge-able and approachable. The whole package!"
+    "type": "code",
+    "quote": "Working with Stephan was always such a great pleasure. His minute attention to detail and love of clean, well-documented code made for one of the smoothest collaborative experiences I've had in a community project. He's organised, focused but knows how to improvise and compromise. Oh, and he's also friendly, knowledgeable and approachable. The whole package!"
+  },
+  {
+    "name": "Philipp Lätsch",
+    "subtitle": "Video Game Content Enthusiast",
+    "type": "video",
+    "quote": "The music and video editing from Stephan are on a very high level. You can see and hear the passion and all the hard work he puts into it!"
   },
   {
     "name": "Irene Emory",
     "subtitle": "Lead Business Analyst at EPAM",
+    "type": "code",
     "quote": "I cannot express enough how the project and team benefit from having Stephan working with us. He seems to genuinely care about the quality of the product. I don't remember his scope of work ever causing any major or medium bugs, only minor ones or none at all. He has great organizational and explanatory skills. His general demeanor uplifts the team spirit."
   }
 ]

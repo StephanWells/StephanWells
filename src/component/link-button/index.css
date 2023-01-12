@@ -2,10 +2,14 @@
 .link-icon {
   margin-right: -3px;
   margin-left: -5px;
-  margin-top: -5px;
+  margin-top: -8px;
   padding: 1px;
   top: 7px;
   position: relative;
   transform: scale(0.62);
   color: rgb(29, 240, 236, 0.5);
+}
+
+.link-caption {
+  white-space: nowrap;
 }

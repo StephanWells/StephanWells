@@ -37,8 +37,13 @@ const LinkButton = (props: LinkButtonProps) => {
         target={"_blank"}
         underline="hover"
       >
-        <SvgIcon className="link-icon" component={LinkIcon} />
-        <Typography className="link-caption" color={"primary"} display="inline">
+        <Typography
+          className="link-caption"
+          color={"primary"}
+          display="inline"
+          component="span"
+        >
+          <SvgIcon className="link-icon" component={LinkIcon} />
           <b>{props.caption}</b>
         </Typography>
       </Link>

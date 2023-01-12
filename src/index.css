@@ -40,3 +40,9 @@ ul {
   font-family: sans-serif;
   color: #e9eaf2;
 }
+
+.noscroll {
+  position: fixed; 
+  overflow-y: scroll;
+  width: 100%;
+}

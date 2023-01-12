@@ -7,6 +7,7 @@ import TabPanel from "./tabpanel";
 import Title from "./title";
 import { tabState } from "../../definitions/tab-state";
 import "./index.css";
+import About from "../about";
 
 const Header = () => {
   const [state, setState] = useState<tabState>({
@@ -46,7 +47,7 @@ const Header = () => {
         <Overview tabState={state} />
       </TabPanel>
       <TabPanel value={state.value} index={1}>
-        <>About goes here</>
+        <About tabState={state} />
       </TabPanel>
       <TabPanel value={state.value} index={2}>
         <>Projects goes here</>

@@ -2,14 +2,13 @@
   background-color: rgb(30, 32, 37, 0.8);
   border-radius: 10px;
   min-height: 309px;
-  width: 80%;
+  min-width: 230px;
   margin: 10px;
   padding: 10px 20px;
   position: relative;
 }
 
 .testimonial-card .name {
-  color: #1df0ec;
   margin-top: 5px;
   text-align: end;
 }
@@ -21,14 +20,15 @@
 .testimonial-card .quote {
   color: rgb(255, 255, 255, 0.6);
   margin-bottom: 10px;
+  hyphens: auto;
 }
 
 .testimonial-card .quote .quotation-mark {
   font-size: 16px;
   padding: 0px 5px;
   line-height: 0px;
-  color:rgb(255, 255, 255, 0.3);
   position: relative;
+  opacity: 0.4;
   top: -3px;
 }
 

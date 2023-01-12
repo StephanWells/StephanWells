@@ -1,0 +1,18 @@
+.image-wrapper-container {
+  width: fit-content;
+  text-align: center;
+  margin: auto;
+  padding-bottom: 15px;
+}
+.image-wrapper-container .divider {
+  margin-top: 8px;
+  background-color: #1df0ec;
+  opacity: 0.5;
+}
+
+.image-wrapper-container .image {
+  margin: 15px 0 0 0;
+  border-radius: 10px;
+  padding: 2px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

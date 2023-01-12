@@ -1,29 +1,66 @@
-import { Box, Divider, Fade, Typography } from "@mui/material";
-import CircleIcon from "./circle-icon";
+import { Box, Divider, Fade, Typography, useTheme } from "@mui/material";
+import CircleIconSmall from "../circle-icon/small";
+import CircleIconLarge from "../circle-icon/large";
 import "./index.css";
+import ProjectType from "../../definitions/project-type";
+import { projectTypeColours } from "../../constants/uiConstants";
 
 interface ContentCardProps {
   icon: React.FunctionComponent;
-  headerText: string;
+  largeIcon?: boolean;
+  headerText?: string;
   children?: React.ReactNode;
   animationDelay: number;
+  projectType?: ProjectType;
 }
 
 const ContentCard = (props: ContentCardProps) => {
+  const theme = useTheme();
+  console.log(props.projectType);
   return (
-    <Box className="content-card">
-      <Fade in={true} style={{ transitionDelay: `${props.animationDelay}ms` }}>
-        <Box className="content-wrapper">
-          <CircleIcon icon={props.icon} />
-          <Box className="colour-chip-primary" />
-          <Typography variant="h3" component="span">
-            {props.headerText}
-          </Typography>
-          <Divider component="div" className="divider" />
-          {props.children}
-        </Box>
-      </Fade>
-    </Box>
+    <>
+      <Box
+        className="content-card"
+        style={{ marginTop: props.largeIcon ? "100px" : "15px" }}
+      >
+        <Fade
+          in={true}
+          style={{ transitionDelay: `${props.animationDelay}ms` }}
+        >
+          <Box>
+            {props.largeIcon && <CircleIconLarge icon={props.icon} />}
+            <Box className="content-wrapper">
+              {!props.largeIcon && <CircleIconSmall icon={props.icon} />}
+              {props.headerText && (
+                <>
+                  <Box
+                    className="colour-chip-primary"
+                    sx={{
+                      backgroundColor: !!props.projectType
+                        ? projectTypeColours[props.projectType]
+                        : theme.palette.primary.main,
+                    }}
+                  />
+                  <Typography variant="h3" component="span">
+                    {props.headerText}
+                  </Typography>
+                  <Divider
+                    component="div"
+                    className="divider"
+                    sx={{
+                      backgroundColor: !!props.projectType
+                        ? projectTypeColours[props.projectType]
+                        : theme.palette.primary.main,
+                    }}
+                  />{" "}
+                </>
+              )}
+              {props.children}
+            </Box>
+          </Box>
+        </Fade>
+      </Box>
+    </>
   );
 };
 

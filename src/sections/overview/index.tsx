@@ -22,7 +22,7 @@ const Overview = (props: OverviewProps) => {
         <Box>
           <ContentCard
             icon={IntroductionIcon}
-            headerText="Hello there!"
+            headerText="Introduction"
             animationDelay={300}
           >
             <Introduction />

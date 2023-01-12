@@ -4,6 +4,9 @@ import Carousel from "react-material-ui-carousel";
 import Testimonial from "./testimonial";
 import "./index.css";
 import items from "../../../assets/content/testimonials.json";
+import { shuffle } from "../../../utils/utilFunctions";
+
+const shuffledItems = shuffle(items);
 
 const getWindowDimensions = () => {
   const { innerWidth: width, innerHeight: height } = window;
@@ -17,10 +20,10 @@ const updateView = (windowDimensions: { width: number }) => {
   const itemsPerView =
     windowDimensions.width > 923 ? 3 : windowDimensions.width > 670 ? 2 : 1;
   const tempItems: number =
-    items.length > itemsPerView ? itemsPerView : items.length;
+    shuffledItems.length > itemsPerView ? itemsPerView : shuffledItems.length;
   const sliderItems = [];
 
-  for (let i = 0; i < items.length; i += tempItems) {
+  for (let i = 0; i < shuffledItems.length; i += tempItems) {
     if (i % tempItems === 0) {
       sliderItems.push(
         <Grid
@@ -33,7 +36,7 @@ const updateView = (windowDimensions: { width: number }) => {
           className="carousel-container"
           key={i}
         >
-          {items.slice(i, i + tempItems).map((item, index) => {
+          {shuffledItems.slice(i, i + tempItems).map((item, index) => {
             return (
               <Grid
                 item
@@ -43,6 +46,7 @@ const updateView = (windowDimensions: { width: number }) => {
                 <Testimonial
                   name={item.name}
                   subtitle={item.subtitle}
+                  type={item.type}
                   quote={item.quote}
                 />
               </Grid>

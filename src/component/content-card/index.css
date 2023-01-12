@@ -15,13 +15,12 @@
 }
 
 .content-card .divider {
-  background-color: rgb(29, 240, 236, 0.2);
+  opacity: 0.2;
   margin-top: 5px;
   margin-bottom: 10px;
 }
 
 .colour-chip-primary {
-  background-color: #1df0ec;
   width: 7px;
   height: 2.4vw;
   min-height: 30px;

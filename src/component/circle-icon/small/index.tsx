@@ -5,7 +5,7 @@ interface CircleIconProps {
   icon: React.FunctionComponent;
 }
 
-const CircleIcon = (props: CircleIconProps) => {
+const CircleIconLarge = (props: CircleIconProps) => {
   const StyledBox = styled(({ className, ...props }: BoxProps) => (
     <Box {...props} className={className} />
   ))({
@@ -14,10 +14,10 @@ const CircleIcon = (props: CircleIconProps) => {
   });
 
   return (
-    <StyledBox className="circle-icon">
-      <SvgIcon component={props.icon} className="inner-icon" />
+    <StyledBox className="circle-icon-small">
+      <SvgIcon component={props.icon} className="inner-icon-small" />
     </StyledBox>
   );
 };
 
-export default CircleIcon;
+export default CircleIconLarge;
