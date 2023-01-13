@@ -1,10 +1,11 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.1fae0a9f.css",
-    "main.js": "/portfolio/static/js/main.c759cf7f.js",
+    "main.js": "/portfolio/static/js/main.d7906aa7.js",
     "static/media/rift.png": "/portfolio/static/media/rift.df25ef8a7181966d7370.png",
     "static/media/newgrounds.png": "/portfolio/static/media/newgrounds.48d8ce49da7bec64cb1b.png",
     "static/media/spreadsheet.png": "/portfolio/static/media/spreadsheet.1bb48bb625b177df40ff.png",
+    "static/media/geometry-dash.png": "/portfolio/static/media/geometry-dash.0c8c7cd5edc82b769f9c.png",
     "static/media/tetris.jpg": "/portfolio/static/media/tetris.48eaa14a16ff6642031f.jpg",
     "static/media/denim.webp": "/portfolio/static/media/denim.bb77e49ff83871a78f30.webp",
     "static/media/introduction.svg": "/portfolio/static/media/introduction.20d536b09111a3baf92a87763d1ed6db.svg",
@@ -21,10 +22,10 @@
     "static/media/face.svg": "/portfolio/static/media/face.64f0eaaa6fd916121ef849e459dbe1f9.svg",
     "static/media/overview.svg": "/portfolio/static/media/overview.a8ad190fec565853551daaca3c76ab41.svg",
     "main.1fae0a9f.css.map": "/portfolio/static/css/main.1fae0a9f.css.map",
-    "main.c759cf7f.js.map": "/portfolio/static/js/main.c759cf7f.js.map"
+    "main.d7906aa7.js.map": "/portfolio/static/js/main.d7906aa7.js.map"
   },
   "entrypoints": [
     "static/css/main.1fae0a9f.css",
-    "static/js/main.c759cf7f.js"
+    "static/js/main.d7906aa7.js"
   ]
 }
