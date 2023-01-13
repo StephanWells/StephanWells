@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.1fae0a9f.css",
-    "main.js": "/portfolio/static/js/main.d7906aa7.js",
+    "main.css": "/portfolio/static/css/main.34ba4808.css",
+    "main.js": "/portfolio/static/js/main.f59d3a3f.js",
     "static/media/rift.png": "/portfolio/static/media/rift.df25ef8a7181966d7370.png",
+    "static/media/harmony-of-heroes.png": "/portfolio/static/media/harmony-of-heroes.1a6ab2d692fad97826dc.png",
     "static/media/newgrounds.png": "/portfolio/static/media/newgrounds.48d8ce49da7bec64cb1b.png",
     "static/media/spreadsheet.png": "/portfolio/static/media/spreadsheet.1bb48bb625b177df40ff.png",
     "static/media/geometry-dash.png": "/portfolio/static/media/geometry-dash.0c8c7cd5edc82b769f9c.png",
@@ -18,14 +19,15 @@
     "static/media/video.svg": "/portfolio/static/media/video.ad69a46c0677b63791ee324450a31448.svg",
     "static/media/project.svg": "/portfolio/static/media/project.68d172385fc149eadd78029a767cc2ab.svg",
     "static/media/about.svg": "/portfolio/static/media/about.5c2aff20b4c10f34ea166c70df6452fb.svg",
+    "static/media/fast-forward.svg": "/portfolio/static/media/fast-forward.7898c442987550df9f5fbb216d78034c.svg",
     "static/media/contact.svg": "/portfolio/static/media/contact.00ba98eb6e77065e4cc23dba20677554.svg",
     "static/media/face.svg": "/portfolio/static/media/face.64f0eaaa6fd916121ef849e459dbe1f9.svg",
     "static/media/overview.svg": "/portfolio/static/media/overview.a8ad190fec565853551daaca3c76ab41.svg",
-    "main.1fae0a9f.css.map": "/portfolio/static/css/main.1fae0a9f.css.map",
-    "main.d7906aa7.js.map": "/portfolio/static/js/main.d7906aa7.js.map"
+    "main.34ba4808.css.map": "/portfolio/static/css/main.34ba4808.css.map",
+    "main.f59d3a3f.js.map": "/portfolio/static/js/main.f59d3a3f.js.map"
   },
   "entrypoints": [
-    "static/css/main.1fae0a9f.css",
-    "static/js/main.d7906aa7.js"
+    "static/css/main.34ba4808.css",
+    "static/js/main.f59d3a3f.js"
   ]
 }
