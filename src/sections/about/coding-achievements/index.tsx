@@ -28,47 +28,27 @@ const CodingAchievements = () => {
           tooltip="Utrecht University"
           caption="Game & Media Technology"
         />
-        , graduating with a cum laude.
-      </Typography>{" "}
-      <Typography display="block" component="span" sx={{ marginTop: "10px" }}>
-        During these courses, I worked on various coding assignments, such as an
-        automatic{" "}
+        , graduating with a cum laude. These courses don't just look pretty on
+        the CV but they were both very practical courses that allowed me to get
+        my hands dirty implementing a lot of techniques used in the industry,
+        from{" "}
         <Typography color={"primary"} display="inline">
-          <b>song genre classifier</b>
+          <b>machine learning</b>
         </Typography>{" "}
-        in{" "}
+        and{" "}
         <Typography color={"primary"} display="inline">
-          <b>MATLAB</b>
+          <b>game development practices</b>
         </Typography>{" "}
-        that uses a novel technique incorporating visual features from audio
-        spectrograms, a{" "}
+        to even low-level coding assignments like implementing{" "}
         <Typography color={"primary"} display="inline">
-          <b>music annotation tool</b>
+          <b>data structures</b>
         </Typography>{" "}
-        developed with{" "}
+        or{" "}
         <Typography color={"primary"} display="inline">
-          <b>WPF</b>
-        </Typography>{" "}
-        used to aid musicology research via facilitating annotations of melodic
-        patterns, multiple video games developed from scratch in{" "}
-        <Typography color={"primary"} display="inline">
-          <b>Unity</b>
-        </Typography>
-        , and various low-level coding assignments working with data structures
-        and algorithms, written in{" "}
-        <Typography color={"primary"} display="inline">
-          <b>C</b>
-        </Typography>
-        ,{" "}
-        <Typography color={"primary"} display="inline">
-          <b>C++</b>
-        </Typography>
-        , and{" "}
-        <Typography color={"primary"} display="inline">
-          <b>Java</b>
+          <b>optimising C++ code</b>
         </Typography>
         .
-      </Typography>
+      </Typography>{" "}
       <ImageWrapper
         src={RiftImage}
         caption="Rift, one of the games I co-developed during my bachelor's course"
@@ -81,18 +61,10 @@ const CodingAchievements = () => {
           tooltip="BD Electronics Ltd."
           caption="BD Electronics"
         />
-        . Despite being an internship, this was a fairly demanding job with its
-        fair share of challenges. It involved writing software (in{" "}
-        <Typography color={"primary"} display="inline">
-          <b>Java</b>
-        </Typography>
-        ) to automate company processes, enforcing and designing company
-        security policies, providing internal IT support to employees (anything
-        from "my monitor isn't working!" to "please fix my spreadsheet
-        formula!"), and extending functionality of existing company software.
-      </Typography>
-      <Typography display="block" component="span" sx={{ marginTop: "10px" }}>
-        My second job, where I am still working as we speak, is working as a
+        . Most of the work there was providing internal IT support to employees
+        (anything from "my monitor isn't working!" to "please fix my spreadsheet
+        formula!") and extending functionality of existing company software. My
+        second job, where I am still working as we speak, is working as a
         software engineer at{" "}
         <LinkButton
           href="https://epam.com/"
@@ -100,51 +72,30 @@ const CodingAchievements = () => {
           caption="EPAM"
         />
         . This is where the bulk of my industry experience and exposure to
-        development best practices lies. Among many achivements, I became quite
-        proficient with{" "}
+        development best practices lies, such as proficiency with{" "}
         <Typography color={"primary"} display="inline">
           <b>Git</b>
         </Typography>
-        , was exposed to{" "}
+        ,{" "}
         <Typography color={"primary"} display="inline">
           <b>Agile methodology</b>
         </Typography>
-        , learned about{" "}
+        ,{" "}
         <Typography color={"primary"} display="inline">
           <b>CI/CD pipelines</b>
         </Typography>
-        , worked heavily with{" "}
-        <Typography color={"primary"} display="inline">
-          <b>APIs and integration</b>
-        </Typography>
-        , and had my first proper exposure to{" "}
-        <Typography color={"primary"} display="inline">
-          <b>front-end development</b>
-        </Typography>{" "}
-        via{" "}
-        <Typography color={"primary"} display="inline">
-          <b>Typescript</b>
-        </Typography>
-        ,{" "}
-        <Typography color={"primary"} display="inline">
-          <b>CSS</b>
-        </Typography>
-        , and{" "}
-        <Typography color={"primary"} display="inline">
-          <b>React</b>
-        </Typography>{" "}
-        (which are the technologies I used in this very website!).
+        , etc.
       </Typography>
       <Typography display="block" component="span" sx={{ marginTop: "10px" }}>
-        Outside of work and studies, I've used my coding skills for all sorts of
-        hobby projects, a number of which relate to integrations and services
-        that revolve around the MMORPG{" "}
+        Outside of work and studies, I've always enjoyed squeezing my coding
+        skills into my passion for video games. A notable highlight here is
+        coding work I've done related to the MMORPG{" "}
         <LinkButton
           href="https://www.guildwars2.com/"
           tooltip="Guild Wars 2"
           caption="Guild Wars 2"
         />
-        . One such project was coding a{" "}
+        , where, among other things, I coded a{" "}
         <Typography color={"primary"} display="inline">
           <b>RESTful API</b>
         </Typography>{" "}
@@ -159,10 +110,9 @@ const CodingAchievements = () => {
           tooltip="Google Sheets"
           caption="Google Sheets"
         />
-        , creating useful spreadsheets for the game's players that not only
-        include advanced spreadsheet techniques such as complex formulae and
-        data validation rules but also include macros/automation and deep
-        integrations with the game's API.
+        , creating useful spreadsheets for the game's players with all sorts of
+        bells and whistles via automation and scripts (the skills I got from my
+        occasional spreadsheet support at my first job came in handy!).
       </Typography>
       <ImageWrapper
         src={SpreadsheetImage}

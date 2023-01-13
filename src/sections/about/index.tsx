@@ -3,6 +3,8 @@ import { ReactComponent as FaceIcon } from "../../assets/circle-icon/face.svg";
 import { ReactComponent as SproutIcon } from "../../assets/circle-icon/sprout.svg";
 import { ReactComponent as CodeIcon } from "../../assets/ui-icon/code.svg";
 import { ReactComponent as MusicIcon } from "../../assets/ui-icon/music.svg";
+import { ReactComponent as VideoIcon } from "../../assets/ui-icon/video.svg";
+import { ReactComponent as FastForwardIcon } from "../../assets/circle-icon/fast-forward.svg";
 import ContentCard from "../../component/content-card";
 import { tabState } from "../../definitions/tab-state";
 import Background from "./background";
@@ -11,6 +13,8 @@ import "./index.css";
 import CodingAchievements from "./coding-achievements";
 import ProjectType from "../../definitions/project-type";
 import MusicAchievements from "./music-achievements";
+import VideoAchievements from "./video-achievements";
+import WhereToGo from "./where-to-go";
 
 interface AboutProps {
   tabState: tabState;
@@ -72,8 +76,41 @@ const About = (props: AboutProps) => {
             headerText="Music Achievements"
             animationDelay={500}
             projectType={ProjectType.music}
+            extraIconPadding="2px 0 0 2px"
           >
             <MusicAchievements />
+          </ContentCard>
+        </Box>
+      </Grow>
+      <Grow
+        in={props.tabState.value === 1}
+        style={{ transformOrigin: "50% 0 0", transitionDelay: "400ms" }}
+        timeout={600}
+      >
+        <Box>
+          <ContentCard
+            icon={VideoIcon}
+            headerText="Video Achievements"
+            animationDelay={600}
+            projectType={ProjectType.video}
+            extraIconPadding="3px 0 0 3px"
+          >
+            <VideoAchievements />
+          </ContentCard>
+        </Box>
+      </Grow>
+      <Grow
+        in={props.tabState.value === 1}
+        style={{ transformOrigin: "50% 0 0", transitionDelay: "400ms" }}
+        timeout={600}
+      >
+        <Box>
+          <ContentCard
+            icon={FastForwardIcon}
+            headerText="Where to go from here?"
+            animationDelay={600}
+          >
+            <WhereToGo />
           </ContentCard>
         </Box>
       </Grow>

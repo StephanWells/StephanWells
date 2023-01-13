@@ -3,6 +3,7 @@ import "./index.css";
 
 interface CircleIconProps {
   icon: React.FunctionComponent;
+  extraPadding?: string;
 }
 
 const CircleIconLarge = (props: CircleIconProps) => {
@@ -15,7 +16,11 @@ const CircleIconLarge = (props: CircleIconProps) => {
 
   return (
     <StyledBox className="circle-icon-small">
-      <SvgIcon component={props.icon} className="inner-icon-small" />
+      <SvgIcon
+        component={props.icon}
+        className="inner-icon-small"
+        sx={{ padding: props.extraPadding }}
+      />
     </StyledBox>
   );
 };

@@ -12,11 +12,11 @@ interface ContentCardProps {
   children?: React.ReactNode;
   animationDelay: number;
   projectType?: ProjectType;
+  extraIconPadding?: string;
 }
 
 const ContentCard = (props: ContentCardProps) => {
   const theme = useTheme();
-  console.log(props.projectType);
   return (
     <>
       <Box
@@ -28,9 +28,19 @@ const ContentCard = (props: ContentCardProps) => {
           style={{ transitionDelay: `${props.animationDelay}ms` }}
         >
           <Box>
-            {props.largeIcon && <CircleIconLarge icon={props.icon} />}
+            {props.largeIcon && (
+              <CircleIconLarge
+                icon={props.icon}
+                extraPadding={props.extraIconPadding}
+              />
+            )}
             <Box className="content-wrapper">
-              {!props.largeIcon && <CircleIconSmall icon={props.icon} />}
+              {!props.largeIcon && (
+                <CircleIconSmall
+                  icon={props.icon}
+                  extraPadding={props.extraIconPadding}
+                />
+              )}
               {props.headerText && (
                 <>
                   <Box

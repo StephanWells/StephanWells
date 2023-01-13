@@ -51,7 +51,7 @@ const Background = () => {
           tooltip="Image-Line"
           caption="FL Studio"
         />{" "}
-        and self-taught my way to proficiency.
+        and excitedly self-taught my way to proficiency.
       </Typography>
       <ImageWrapper
         src={NewgroundsImage}

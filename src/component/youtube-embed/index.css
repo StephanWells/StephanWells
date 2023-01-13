@@ -1,0 +1,31 @@
+.video-responsive {
+  overflow: hidden;
+  padding: 15px 0 15px 0;
+  position: relative;
+  max-height: 225px;
+  min-height: 225px;
+}
+
+.video-responsive iframe {
+  left: 50%;
+  transform: translate(-50%);
+  height: 225px;
+  width: 400px;
+  position: absolute;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.caption-container .divider {
+  margin-top: 8px;
+  background-color: #1df0ec;
+  opacity: 0.5;
+  width: 415px;
+  margin-left: 50%;
+  transform: translate(-50%);
+}
+
+.caption-container .caption {
+  text-align: center;
+}
