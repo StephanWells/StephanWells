@@ -9,9 +9,9 @@ const Background = () => {
   return (
     <Box className="background-container">
       <Typography display="block" component="span">
-        My answer to "Where are you from?" is longer than it has any right to
-        be. I was born in England to an English father and Maltese mother and
-        moved to the Mediterranean island of{" "}
+        My answer to "Where are you from?" is not as straightforward as you'd
+        expect. I was born in England to an English father and Maltese mother
+        and moved to the Mediterranean island of{" "}
         <Typography color={"primary"} display="inline">
           <b>Malta</b>
         </Typography>{" "}

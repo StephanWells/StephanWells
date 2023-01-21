@@ -89,17 +89,16 @@ const Testimonials = () => {
         navButtonsProps={{
           style: {
             backgroundColor: "rgb(240, 240, 250, 0.3)",
-            width: "25px",
-            height: "100%",
-            borderRadius: "11px",
-            marginRight: "7px",
+            width: "30px",
+            height: "30px",
+            borderRadius: "25px",
+            marginRight: "4px",
           },
         }}
         navButtonsWrapperProps={{
           style: {
-            height: "87.3%",
-            bottom: "48.6%",
             top: "unset",
+            bottom: "-40px",
           },
         }}
         indicatorIconButtonProps={{
@@ -114,6 +113,7 @@ const Testimonials = () => {
             opacity: "0.45",
           },
         }}
+        navButtonsAlwaysVisible={true}
         animation="slide"
         cycleNavigation
         duration={300}

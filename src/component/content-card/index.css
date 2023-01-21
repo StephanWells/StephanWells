@@ -1,5 +1,4 @@
 .content-card {
-  background-color: rgb(44, 46, 58, 0.5);
   border-radius: 10px;
   margin-top: 15px;
   padding-top: 15px;
@@ -12,6 +11,19 @@
 
 .content-wrapper {
   margin: 0 -5px;
+}
+
+.circle-icon-large-wrapper {
+  position: absolute;
+  left: 50%;
+  margin-top: 0px;
+  top: -100px;
+}
+
+.circle-icon-small-wrapper {
+  position: absolute;
+  left: 80%;
+  top: -35px;
 }
 
 .content-card .divider {

@@ -6,7 +6,7 @@ interface CircleIconProps {
   extraPadding?: string;
 }
 
-const CircleIconLarge = (props: CircleIconProps) => {
+const CircleIcon = (props: CircleIconProps) => {
   const StyledBox = styled(({ className, ...props }: BoxProps) => (
     <Box {...props} className={className} />
   ))({
@@ -25,4 +25,4 @@ const CircleIconLarge = (props: CircleIconProps) => {
   );
 };
 
-export default CircleIconLarge;
+export default CircleIcon;

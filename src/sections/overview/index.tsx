@@ -5,6 +5,7 @@ import ContentCard from "../../component/content-card";
 import { tabState } from "../../definitions/tab-state";
 import "./index.css";
 import Introduction from "./introduction";
+import Skills from "./skills";
 import Testimonials from "./testimonials";
 
 interface OverviewProps {
@@ -31,6 +32,17 @@ const Overview = (props: OverviewProps) => {
       </Grow>
       <Grow
         in={props.tabState.value === 0}
+        style={{ transformOrigin: "50% 0 0" }}
+        timeout={600}
+      >
+        <Box>
+          <ContentCard animationDelay={400} transparent>
+            <Skills />
+          </ContentCard>
+        </Box>
+      </Grow>
+      <Grow
+        in={props.tabState.value === 0}
         style={{ transformOrigin: "50% 0 0", transitionDelay: "100ms" }}
         timeout={600}
       >
@@ -38,7 +50,7 @@ const Overview = (props: OverviewProps) => {
           <ContentCard
             icon={TestimonialsIcon}
             headerText="Testimonials"
-            animationDelay={300}
+            animationDelay={500}
           >
             <Testimonials />
           </ContentCard>

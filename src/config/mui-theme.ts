@@ -34,6 +34,9 @@ theme = createTheme(theme, {
       fontSize: "12px",
       fontFamily: "Encode Sans SC",
     },
+    caption: {
+      letterSpacing: "0.2px",
+    },
   },
   components: {
     MuiPopper: {

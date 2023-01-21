@@ -1,0 +1,14 @@
+.center-icon {
+  margin: auto;
+  width: 50%;
+  padding-bottom: 6px;
+}
+
+.skill-body {
+  color: #e9eaf2;
+  opacity: 0.8;
+  padding: 5px 0px;
+  max-width: 250px;
+  margin: auto;
+  font-style: italic;
+}

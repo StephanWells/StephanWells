@@ -40,10 +40,10 @@ const Introduction = () => {
         </Typography>
       </Typography>
       <Typography display="block" component="span" sx={{ marginTop: "10px" }}>
-        This is my corner of the web where you can browse through my portfolio
-        of projects and learn a bit about me, my hobbies, and my professional
-        background. Hit the links in the navigation bar above to explore further
-        or contact me for any business enquiries!
+        This is my website where you can browse through my portfolio of projects
+        and learn a bit about me, my hobbies, and my professional background.
+        Hit the links in the navigation bar above to explore further or contact
+        me for any business enquiries!
       </Typography>
     </Box>
   );

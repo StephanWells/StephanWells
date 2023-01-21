@@ -6,13 +6,14 @@ import ProjectType from "../../definitions/project-type";
 import { projectTypeColours } from "../../constants/uiConstants";
 
 interface ContentCardProps {
-  icon: React.FunctionComponent;
+  icon?: React.FunctionComponent;
   largeIcon?: boolean;
   headerText?: string;
   children?: React.ReactNode;
   animationDelay: number;
   projectType?: ProjectType;
   extraIconPadding?: string;
+  transparent?: boolean;
 }
 
 const ContentCard = (props: ContentCardProps) => {
@@ -21,25 +22,32 @@ const ContentCard = (props: ContentCardProps) => {
     <>
       <Box
         className="content-card"
-        style={{ marginTop: props.largeIcon ? "100px" : "15px" }}
+        style={{
+          marginTop: !props.icon ? "-35px" : props.largeIcon ? "100px" : "15px",
+          backgroundColor: !props.transparent ? "rgb(44, 46, 58, 0.5)" : "",
+        }}
       >
         <Fade
           in={true}
           style={{ transitionDelay: `${props.animationDelay}ms` }}
         >
           <Box>
-            {props.largeIcon && (
-              <CircleIconLarge
-                icon={props.icon}
-                extraPadding={props.extraIconPadding}
-              />
-            )}
-            <Box className="content-wrapper">
-              {!props.largeIcon && (
-                <CircleIconSmall
+            {!!props.icon && props.largeIcon && (
+              <Box className="circle-icon-large-wrapper">
+                <CircleIconLarge
                   icon={props.icon}
                   extraPadding={props.extraIconPadding}
                 />
+              </Box>
+            )}
+            <Box className="content-wrapper">
+              {!!props.icon && !props.largeIcon && (
+                <Box className="circle-icon-small-wrapper">
+                  <CircleIconSmall
+                    icon={props.icon}
+                    extraPadding={props.extraIconPadding}
+                  />
+                </Box>
               )}
               {props.headerText && (
                 <>

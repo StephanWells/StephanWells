@@ -33,8 +33,8 @@ const VideoAchievements = () => {
       </Typography>
       <Typography display="block" component="span" sx={{ marginTop: "10px" }}>
         One other large video editing project was a video I created as a
-        visualisation for an arrangement I and a vocalist friend, Darren, worked
-        on of the track
+        visualisation for a music arrangement I and a vocalist friend, Darren,
+        worked on of the song{" "}
         <LinkButton
           href="https://www.youtube.com/watch?v=23g5HBOg3Ic"
           tooltip="YouTube"

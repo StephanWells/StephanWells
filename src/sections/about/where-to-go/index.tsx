@@ -8,8 +8,8 @@ const WhereToGo = () => {
         If you've read this far, chances are you're interested in my work to
         some degree. You can check the Projects tab to get a more detailed and
         comprehensive list of projects I've worked on. For business enquiries,
-        such as custom music/video editing, use the contact form in the Contact
-        tab to contact me directly and I'll reply within a day.
+        such as custom music/video editing, use the form in the Contact tab to
+        message me directly and I'll reply within a day.
       </Typography>
       <Typography display="block" component="span" sx={{ marginTop: "10px" }}>
         I'm hoping that some of the passion I put into my work is evident in
