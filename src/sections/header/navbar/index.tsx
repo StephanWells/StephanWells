@@ -38,6 +38,7 @@ const NavBar = (props: NavBarProps) => {
   return (
     <Tabs
       className="navbar"
+      sx={{ display: { md: "block", sm: "none", xs: "none" } }}
       value={Math.floor(props.currentState.value)}
       onChange={handleChange}
       aria-label="tabs"

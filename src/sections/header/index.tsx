@@ -1,67 +1,88 @@
-import { Box, Toolbar } from "@mui/material";
+import { Box, IconButton, Toolbar } from "@mui/material";
 import { useState } from "react";
-import Overview from "../overview";
 import NavBar from "./navbar";
 import Popup from "./popup";
-import TabPanel from "./tabpanel";
 import Title from "./title";
 import { tabState } from "../../definitions/tab-state";
+import MenuIcon from "@mui/icons-material/Menu";
 import "./index.css";
 import About from "../about";
+import Overview from "../overview";
+import TabPanel from "./tabpanel";
 
-const Header = () => {
-  const [state, setState] = useState<tabState>({
-    value: 0,
-  });
+interface HeaderProps {
+  state: tabState;
+  setState: (state: tabState) => void;
+}
 
+const Header = (props: HeaderProps) => {
   const handleCloseCallback = () => {
-    setState({ value: state.value, anchorEl: null });
+    props.setState({ value: props.state.value, anchorEl: null });
   };
 
   const handleMenuClickCallback = (menuItem: number) => {
-    setState({ value: menuItem });
+    props.setState({ value: menuItem });
   };
 
   const [indicatorColor, setIndicatorColor] = useState<string>("#1df0ec");
+  const [open, setOpen] = useState(false);
+
+  const handleDrawerOpen = () => {
+    setOpen(true);
+  };
+
+  const handleDrawerClose = () => {
+    setOpen(false);
+  };
 
   return (
-    <Box sx={{ width: "100%" }}>
+    <Box className="header-wrapper">
       <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
         <Toolbar className="toolbar">
-          <Title tabState={state} />
+          <IconButton
+            color="inherit"
+            aria-label="open drawer"
+            onClick={handleDrawerOpen}
+            edge="start"
+            className="menu-button"
+            sx={{ display: { md: "none" } }}
+          >
+            <MenuIcon />
+          </IconButton>
+          <Title tabState={props.state} />
           <NavBar
-            currentState={state}
-            setTabState={setState}
+            currentState={props.state}
+            setTabState={props.setState}
             indicatorColor={indicatorColor}
             setIndicatorColor={setIndicatorColor}
           />
         </Toolbar>
       </Box>
       <Popup
-        anchorEl={state.anchorEl ?? null}
+        anchorEl={props.state.anchorEl ?? null}
         handleClose={handleCloseCallback}
         handleMenuClick={handleMenuClickCallback}
         setIndicatorColor={setIndicatorColor}
       />
-      <TabPanel value={state.value} index={0}>
-        <Overview tabState={state} />
+      <TabPanel value={props.state.value} index={0}>
+        <Overview tabState={props.state} />
       </TabPanel>
-      <TabPanel value={state.value} index={1}>
-        <About tabState={state} />
+      <TabPanel value={props.state.value} index={1}>
+        <About tabState={props.state} />
       </TabPanel>
-      <TabPanel value={state.value} index={2}>
+      <TabPanel value={props.state.value} index={2}>
         <>Projects goes here</>
       </TabPanel>
-      <TabPanel value={state.value} index={2.1}>
+      <TabPanel value={props.state.value} index={2.1}>
         <>Code goes here</>
       </TabPanel>
-      <TabPanel value={state.value} index={2.2}>
+      <TabPanel value={props.state.value} index={2.2}>
         <>Music goes here</>
       </TabPanel>
-      <TabPanel value={state.value} index={2.3}>
+      <TabPanel value={props.state.value} index={2.3}>
         <>Video goes here</>
       </TabPanel>
-      <TabPanel value={state.value} index={2}>
+      <TabPanel value={props.state.value} index={2}>
         <>Contact goes here</>
       </TabPanel>
     </Box>
